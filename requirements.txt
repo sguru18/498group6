@@ -1,0 +1,8 @@
+tiktoken
+pytest
+matplotlib
+numpy
+openai
+datasets
+docker
+swebench
