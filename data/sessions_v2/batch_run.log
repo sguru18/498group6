@@ -80,3 +80,9 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 [context] pruned to ~14189 tokens (14 messages dropped so far)
 [context] pruned to ~14238 tokens (26 messages dropped so far)
 [context] pruned to ~14300 tokens (27 messages dropped so far)
+[context] pruned to ~14162 tokens (39 messages dropped so far)
+[context] pruned to ~14323 tokens (39 messages dropped so far)
+  ✓  Done → data/sessions_v2/pylint-dev__pylint-7993.jsonl
+[9/25] Running sympy__sympy-14308 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.sympy_1776_sympy-14308:latest …
+[DockerSandbox] Starting container cs498_sympy__sympy-14308 …
