@@ -30,6 +30,8 @@ TEST_RUNNER_KEYWORDS = [
     "mocha",
     "nosetests",
     "unittest",
+    "runtests.py",
+    "bin/test",
 ]
 
 # Signals that indicate test failure (case-insensitive)
@@ -64,6 +66,8 @@ def _is_test_run_step(step: dict[str, Any]) -> bool:
     Returns:
         True if this step triggered a test run.
     """
+    if step.get("test_status"):
+        return True
     if step.get("tool_name") != "bash":
         return False
     cmd = ""
@@ -168,7 +172,10 @@ def segment_attempts(
         attempt_end = end_step_idx
         test_step = steps[end_step_idx]
         tool_output = test_step.get("tool_output") or ""
-        outcome = _determine_outcome(tool_output)
+        # Harness v2 steps carry a graded test_status; prefer it over text heuristics.
+        structured = test_step.get("test_status")
+        outcome = ({"pass": "pass", "fail": "fail", "error": "fail"}[structured]
+                   if structured else _determine_outcome(tool_output))
 
         # Token span: from start of attempt to end of attempt
         token_start = steps[attempt_start]["tokens_so_far"] - _step_token_count(steps[attempt_start])
@@ -183,7 +190,9 @@ def segment_attempts(
         token_span = token_end - token_start
 
         error_type: str | None = None
-        if outcome == "fail":
+        if outcome == "fail" and test_step.get("error_category"):
+            error_type = test_step["error_category"]
+        elif outcome == "fail":
             error_type = classify_error(tool_output)
         elif outcome == "pass":
             error_type = None

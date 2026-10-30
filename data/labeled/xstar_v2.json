@@ -1,0 +1,453 @@
+[
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 1,
+    "edit_step": 13,
+    "steps_between": 12,
+    "gen_tokens": 3569,
+    "ctx_tokens": 4195,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 15,
+    "edit_step": 27,
+    "steps_between": 12,
+    "gen_tokens": 6649,
+    "ctx_tokens": 3350,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_error"
+  },
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 29,
+    "edit_step": 43,
+    "steps_between": 14,
+    "gen_tokens": 6654,
+    "ctx_tokens": 5495,
+    "error_category": "syntax",
+    "error_types": [
+      "SyntaxError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 45,
+    "edit_step": 47,
+    "steps_between": 2,
+    "gen_tokens": 1955,
+    "ctx_tokens": 1460,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_error"
+  },
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 49,
+    "edit_step": 57,
+    "steps_between": 8,
+    "gen_tokens": 4352,
+    "ctx_tokens": 3369,
+    "error_category": "syntax",
+    "error_types": [
+      "SyntaxError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_error"
+  },
+  {
+    "task_id": "django__django-13265",
+    "fail_step": 65,
+    "edit_step": 79,
+    "steps_between": 14,
+    "gen_tokens": 9318,
+    "ctx_tokens": 6343,
+    "error_category": "syntax",
+    "error_types": [
+      "SyntaxError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": null
+  },
+  {
+    "task_id": "django__django-16041",
+    "fail_step": 1,
+    "edit_step": 5,
+    "steps_between": 4,
+    "gen_tokens": 1952,
+    "ctx_tokens": 748,
+    "error_category": "runtime",
+    "error_types": [
+      "TypeError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_pass"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 1,
+    "edit_step": 5,
+    "steps_between": 4,
+    "gen_tokens": 728,
+    "ctx_tokens": 863,
+    "error_category": "runtime",
+    "error_types": [
+      "TypeError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 7,
+    "edit_step": 13,
+    "steps_between": 6,
+    "gen_tokens": 2263,
+    "ctx_tokens": 1492,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_pass"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 16,
+    "edit_step": 22,
+    "steps_between": 6,
+    "gen_tokens": 1937,
+    "ctx_tokens": 2603,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "harness",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 24,
+    "edit_step": 34,
+    "steps_between": 10,
+    "gen_tokens": 6823,
+    "ctx_tokens": 7562,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 36,
+    "edit_step": 38,
+    "steps_between": 2,
+    "gen_tokens": 944,
+    "ctx_tokens": 1211,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 40,
+    "edit_step": 50,
+    "steps_between": 10,
+    "gen_tokens": 4954,
+    "ctx_tokens": 4903,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 52,
+    "edit_step": 54,
+    "steps_between": 2,
+    "gen_tokens": 914,
+    "ctx_tokens": 1215,
+    "error_category": "runtime",
+    "error_types": [
+      "NameError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 56,
+    "edit_step": 58,
+    "steps_between": 2,
+    "gen_tokens": 853,
+    "ctx_tokens": 1162,
+    "error_category": "runtime",
+    "error_types": [
+      "AttributeError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 60,
+    "edit_step": 62,
+    "steps_between": 2,
+    "gen_tokens": 955,
+    "ctx_tokens": 1349,
+    "error_category": "runtime",
+    "error_types": [
+      "TypeError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 64,
+    "edit_step": 66,
+    "steps_between": 2,
+    "gen_tokens": 1220,
+    "ctx_tokens": 1612,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "fail_step": 68,
+    "edit_step": 70,
+    "steps_between": 2,
+    "gen_tokens": 1536,
+    "ctx_tokens": 1677,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 1,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 1,
+    "edit_step": 3,
+    "steps_between": 2,
+    "gen_tokens": 289,
+    "ctx_tokens": 304,
+    "error_category": "syntax",
+    "error_types": [
+      "SympifyError",
+      "SyntaxError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 25,
+    "edit_step": 27,
+    "steps_between": 2,
+    "gen_tokens": 1265,
+    "ctx_tokens": 1069,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 29,
+    "edit_step": 33,
+    "steps_between": 4,
+    "gen_tokens": 2251,
+    "ctx_tokens": 1877,
+    "error_category": "runtime",
+    "error_types": [
+      "AttributeError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 35,
+    "edit_step": 37,
+    "steps_between": 2,
+    "gen_tokens": 733,
+    "ctx_tokens": 910,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 39,
+    "edit_step": 41,
+    "steps_between": 2,
+    "gen_tokens": 1246,
+    "ctx_tokens": 1078,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 43,
+    "edit_step": 45,
+    "steps_between": 2,
+    "gen_tokens": 707,
+    "ctx_tokens": 880,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 47,
+    "edit_step": 49,
+    "steps_between": 2,
+    "gen_tokens": 1072,
+    "ctx_tokens": 957,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 51,
+    "edit_step": 53,
+    "steps_between": 2,
+    "gen_tokens": 888,
+    "ctx_tokens": 1067,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 55,
+    "edit_step": 59,
+    "steps_between": 4,
+    "gen_tokens": 2585,
+    "ctx_tokens": 2650,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 61,
+    "edit_step": 63,
+    "steps_between": 2,
+    "gen_tokens": 698,
+    "ctx_tokens": 877,
+    "error_category": "runtime",
+    "error_types": [
+      "NameError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 65,
+    "edit_step": 73,
+    "steps_between": 8,
+    "gen_tokens": 5923,
+    "ctx_tokens": 5531,
+    "error_category": "logic",
+    "error_types": [
+      "AssertionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": "test_fail"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "fail_step": 75,
+    "edit_step": 77,
+    "steps_between": 2,
+    "gen_tokens": 921,
+    "ctx_tokens": 1170,
+    "error_category": "runtime",
+    "error_types": [
+      "RecursionError"
+    ],
+    "stage": 0,
+    "fail_source": "agent",
+    "next_test": null
+  }
+]

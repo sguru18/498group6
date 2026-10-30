@@ -1,0 +1,82 @@
+[batch_run] Loading tasks …
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[batch_run] Running 25 task(s) → data/sessions_v2/
+[3/25] Running scikit-learn__scikit-learn-14087 …[2/25] Running pytest-dev__pytest-5221 …
+[1/25] Running sympy__sympy-14817 …
+
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.sympy_1776_sympy-14817:latest …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14087:latest …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5221:latest …
+[DockerSandbox] Starting container cs498_sympy__sympy-14817 …
+[DockerSandbox] Starting container cs498_pytest-dev__pytest-5221 …
+[DockerSandbox] Starting container cs498_scikit-learn__scikit-learn-14087 …
+  ✓  Done → data/sessions_v2/pytest-dev__pytest-5221.jsonl
+[4/25] Running django__django-13265 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.django_1776_django-13265:latest …
+[DockerSandbox] Starting container cs498_django__django-13265 …
+[context] pruned to ~12461 tokens (0 messages dropped so far)
+[context] pruned to ~14324 tokens (6 messages dropped so far)
+[context] pruned to ~13985 tokens (10 messages dropped so far)
+[context] pruned to ~13403 tokens (0 messages dropped so far)
+[context] pruned to ~14346 tokens (16 messages dropped so far)
+[context] pruned to ~14030 tokens (4 messages dropped so far)
+[context] pruned to ~14232 tokens (21 messages dropped so far)
+[context] pruned to ~14152 tokens (10 messages dropped so far)
+[context] pruned to ~14156 tokens (25 messages dropped so far)
+[context] pruned to ~10657 tokens (0 messages dropped so far)
+[context] pruned to ~14046 tokens (27 messages dropped so far)
+[context] pruned to ~14133 tokens (22 messages dropped so far)
+[context] pruned to ~13011 tokens (28 messages dropped so far)
+[context] pruned to ~14324 tokens (31 messages dropped so far)
+[context] pruned to ~14343 tokens (25 messages dropped so far)
+[context] pruned to ~14231 tokens (30 messages dropped so far)
+[context] pruned to ~13085 tokens (32 messages dropped so far)
+[context] pruned to ~13986 tokens (32 messages dropped so far)
+[context] pruned to ~14337 tokens (33 messages dropped so far)
+[context] pruned to ~13797 tokens (36 messages dropped so far)
+[context] pruned to ~13518 tokens (38 messages dropped so far)
+[context] pruned to ~14317 tokens (2 messages dropped so far)
+[context] pruned to ~14266 tokens (43 messages dropped so far)
+[context] pruned to ~14331 tokens (43 messages dropped so far)
+[context] pruned to ~13497 tokens (10 messages dropped so far)
+[context] pruned to ~14312 tokens (49 messages dropped so far)
+[context] pruned to ~13049 tokens (51 messages dropped so far)
+[context] pruned to ~13521 tokens (46 messages dropped so far)
+[context] pruned to ~13896 tokens (14 messages dropped so far)
+[context] pruned to ~13937 tokens (53 messages dropped so far)
+[context] pruned to ~13984 tokens (52 messages dropped so far)
+[context] pruned to ~14093 tokens (56 messages dropped so far)
+[context] pruned to ~14286 tokens (18 messages dropped so far)
+[context] pruned to ~14046 tokens (55 messages dropped so far)
+  ✓  Done → data/sessions_v2/sympy__sympy-14817.jsonl
+[5/25] Running pytest-dev__pytest-8365 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-8365:latest …
+[DockerSandbox] Starting container cs498_pytest-dev__pytest-8365 …
+[context] pruned to ~13945 tokens (24 messages dropped so far)
+[context] pruned to ~14025 tokens (59 messages dropped so far)
+[context] pruned to ~13944 tokens (28 messages dropped so far)
+  ✓  Done → data/sessions_v2/scikit-learn__scikit-learn-14087.jsonl
+[6/25] Running django__django-16041 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.django_1776_django-16041:latest …
+[DockerSandbox] Starting container cs498_django__django-16041 …
+[context] pruned to ~14308 tokens (34 messages dropped so far)
+[context] pruned to ~14217 tokens (38 messages dropped so far)
+[context] pruned to ~13853 tokens (40 messages dropped so far)
+[context] pruned to ~14126 tokens (42 messages dropped so far)
+  ✓  Done → data/sessions_v2/django__django-16041.jsonl
+[7/25] Running django__django-14608 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.django_1776_django-14608:latest …
+[DockerSandbox] Starting container cs498_django__django-14608 …
+[context] pruned to ~14072 tokens (46 messages dropped so far)
+[context] pruned to ~13872 tokens (48 messages dropped so far)
+[context] pruned to ~13829 tokens (50 messages dropped so far)
+[context] pruned to ~13366 tokens (53 messages dropped so far)
+  ✓  Done → data/sessions_v2/django__django-13265.jsonl
+[8/25] Running pylint-dev__pylint-7993 …
+[DockerSandbox] Pulling image swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-7993:latest …
+[DockerSandbox] Starting container cs498_pylint-dev__pylint-7993 …
+[context] pruned to ~13443 tokens (0 messages dropped so far)
+[context] pruned to ~14218 tokens (0 messages dropped so far)
+[context] pruned to ~14189 tokens (14 messages dropped so far)
+[context] pruned to ~14238 tokens (26 messages dropped so far)
+[context] pruned to ~14300 tokens (27 messages dropped so far)

@@ -4,6 +4,7 @@ Provides helpers to load and sample tasks from the princeton-nlp/SWE-bench_Lite
 dataset. The dataset split used is "test" (the standard evaluation split).
 """
 
+import json
 import random
 from typing import Optional
 
@@ -24,19 +25,32 @@ def _get_dataset() -> object:
     return _DATASET
 
 
+def _as_list(value: object) -> list[str]:
+    if isinstance(value, str):
+        return json.loads(value) if value.strip() else []
+    return list(value or [])
+
+
 def _row_to_task(row: dict) -> dict:
     """Convert a dataset row to the canonical task dict format."""
+    from harness.test_runner import test_files_from_patch
+
+    test_patch = row.get("test_patch", "")
     return {
         "task_id": row["instance_id"],
         "repo": row["repo"],
+        "version": row.get("version"),
         "base_commit": row["base_commit"],
         "problem_statement": row["problem_statement"],
-        "test_patch": row.get("test_patch", ""),
+        "test_patch": test_patch,
+        "test_files": test_files_from_patch(test_patch),
+        "fail_to_pass": _as_list(row.get("FAIL_TO_PASS")),
+        "pass_to_pass": _as_list(row.get("PASS_TO_PASS")),
         "hints_text": row.get("hints_text") or None,
     }
 
 
-def load_lite_tasks(n: int = 20, seed: int = 42) -> list[dict]:
+def load_lite_tasks(n: int = 20, seed: int = 42, repos: list[str] | None = None) -> list[dict]:
     """Load n tasks from SWE-bench Lite, deterministically sampled.
 
     Uses a seeded RNG so the same (n, seed) pair always returns the same tasks.
@@ -44,6 +58,7 @@ def load_lite_tasks(n: int = 20, seed: int = 42) -> list[dict]:
     Args:
         n: Number of tasks to return.
         seed: Random seed for reproducible sampling.
+        repos: Optional repo filter, e.g. ["django/django", "sympy/sympy"].
 
     Returns:
         List of task dicts, each containing:
@@ -52,12 +67,14 @@ def load_lite_tasks(n: int = 20, seed: int = 42) -> list[dict]:
             - base_commit: str
             - problem_statement: str
             - test_patch: str
+            - test_files: list[str]  (paths touched by test_patch)
+            - fail_to_pass / pass_to_pass: list[str]
             - hints_text: str | None
     """
     ds = _get_dataset()
-    total = len(ds)
+    pool = [i for i in range(len(ds)) if not repos or ds[i]["repo"] in repos]
     rng = random.Random(seed)
-    indices = rng.sample(range(total), min(n, total))
+    indices = rng.sample(pool, min(n, len(pool)))
     return [_row_to_task(ds[i]) for i in sorted(indices)]
 
 

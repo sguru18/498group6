@@ -1,0 +1,905 @@
+[
+  {
+    "task_id": "django__django-11630",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 15,
+    "n_stages": 3,
+    "baseline_seconds": 33,
+    "summary_line": "Ran 18 tests in 0.255s FAILED (failures=2)"
+  },
+  {
+    "task_id": "django__django-10924",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "TypeError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 1,
+    "n_stages": 2,
+    "baseline_seconds": 34,
+    "summary_line": "Ran 2 tests in 0.006s FAILED (errors=1)"
+  },
+  {
+    "task_id": "astropy__astropy-12907",
+    "repo": "astropy/astropy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 13,
+    "n_stages": 3,
+    "baseline_seconds": 49,
+    "summary_line": "2 failed, 13 passed in 1.95s"
+  },
+  {
+    "task_id": "django__django-12184",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 25,
+    "n_stages": 2,
+    "baseline_seconds": 25,
+    "summary_line": "Ran 26 tests in 0.066s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-12284",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 31,
+    "n_stages": 2,
+    "baseline_seconds": 26,
+    "summary_line": "Ran 32 tests in 0.056s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-12497",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 82,
+    "n_stages": 3,
+    "baseline_seconds": 24,
+    "summary_line": "Ran 84 tests in 0.628s FAILED (failures=2)"
+  },
+  {
+    "task_id": "django__django-12747",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 3,
+    "f2p_total": 3,
+    "p2p_passing": 49,
+    "n_stages": 4,
+    "baseline_seconds": 28,
+    "summary_line": "Ran 53 tests in 4.502s FAILED (failures=3, skipped=1)"
+  },
+  {
+    "task_id": "django__django-13028",
+    "repo": "django/django",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.django_1776_django-13028:latest': Error response from daemon: Head \"https://registry-1.docker.io/v2/swebench/sweb.eval.x86_64.django_1776_django-13028/manifests/latest\": proxyconnect tcp: dial tcp 192.168.65.1:3128: i/o timeout\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "django__django-13033",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 26,
+    "n_stages": 2,
+    "baseline_seconds": 19,
+    "summary_line": "Ran 27 tests in 0.225s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-13158",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 29,
+    "n_stages": 2,
+    "baseline_seconds": 26,
+    "summary_line": "Ran 32 tests in 0.225s FAILED (failures=1, skipped=2)"
+  },
+  {
+    "task_id": "django__django-13230",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "IndexError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 23,
+    "n_stages": 2,
+    "baseline_seconds": 29,
+    "summary_line": "Ran 24 tests in 0.523s FAILED (errors=1)"
+  },
+  {
+    "task_id": "django__django-13265",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 2,
+    "f2p_total": 4,
+    "p2p_passing": 119,
+    "n_stages": 5,
+    "baseline_seconds": 31,
+    "summary_line": "Ran 126 tests in 1.083s FAILED (failures=6)"
+  },
+  {
+    "task_id": "django__django-13447",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "KeyError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 5,
+    "n_stages": 2,
+    "baseline_seconds": 28,
+    "summary_line": "Ran 6 tests in 0.051s FAILED (errors=1)"
+  },
+  {
+    "task_id": "django__django-14411",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 83,
+    "n_stages": 2,
+    "baseline_seconds": 25,
+    "summary_line": "Ran 84 tests in 0.858s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-15789",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "TypeError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 17,
+    "n_stages": 2,
+    "baseline_seconds": 25,
+    "summary_line": "Ran 18 tests in 1.062s FAILED (errors=1)"
+  },
+  {
+    "task_id": "django__django-16041",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "TypeError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 112,
+    "n_stages": 3,
+    "baseline_seconds": 28,
+    "summary_line": "Ran 159 tests in 3.251s FAILED (errors=2)"
+  },
+  {
+    "task_id": "django__django-16408",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 18,
+    "n_stages": 3,
+    "baseline_seconds": 21,
+    "summary_line": "Ran 20 tests in 0.119s FAILED (failures=2)"
+  },
+  {
+    "task_id": "django__django-16595",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 37,
+    "n_stages": 2,
+    "baseline_seconds": 26,
+    "summary_line": "Ran 38 tests in 0.113s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-14382",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 188,
+    "n_stages": 2,
+    "baseline_seconds": 170,
+    "summary_line": "Ran 199 tests in 148.459s FAILED (failures=1)"
+  },
+  {
+    "task_id": "django__django-14608",
+    "repo": "django/django",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 4,
+    "f2p_total": 4,
+    "p2p_passing": 394,
+    "n_stages": 5,
+    "baseline_seconds": 188,
+    "summary_line": "Ran 417 tests in 160.033s FAILED (failures=4, skipped=15)"
+  },
+  {
+    "task_id": "matplotlib__matplotlib-23913",
+    "repo": "matplotlib/matplotlib",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23913:latest': write /var/lib/docker/tmp/GetImageBlob3506996254: no space left on device\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "matplotlib__matplotlib-22835",
+    "repo": "matplotlib/matplotlib",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 20,
+    "n_stages": 2,
+    "baseline_seconds": 139,
+    "summary_line": "1 failed, 26 passed, 2 skipped in 21.01s"
+  },
+  {
+    "task_id": "matplotlib__matplotlib-24265",
+    "repo": "matplotlib/matplotlib",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24265:latest': failed to register layer: mkdir /usr/share/alsa/ucm2/conf.d/acp-pdm-mach: no space left on device\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "mwaskom__seaborn-3010",
+    "repo": "mwaskom/seaborn",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.mwaskom_1776_seaborn-3010:latest': failed to register layer: write /opt/miniconda3/pkgs/cache/497deca9.json: no space left on device\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "pallets__flask-5063",
+    "repo": "pallets/flask",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.pallets_1776_flask-5063:latest': failed to register layer: write /opt/miniconda3/pkgs/python-3.11.10-he870216_0.conda: no space left on device\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "psf__requests-3362",
+    "repo": "psf/requests",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 75,
+    "n_stages": 2,
+    "baseline_seconds": 36,
+    "summary_line": "1 failed, 75 passed, 1 xfailed, 108 errors in 2.10s"
+  },
+  {
+    "task_id": "psf__requests-863",
+    "repo": "psf/requests",
+    "valid": false,
+    "crashed": false,
+    "error_types": [],
+    "error_category": "logic",
+    "f2p_failing": 0,
+    "f2p_total": 4,
+    "p2p_passing": 52,
+    "n_stages": 0,
+    "baseline_seconds": 42,
+    "summary_line": "16 failed, 60 passed in 8.74s"
+  },
+  {
+    "task_id": "pydata__xarray-4248",
+    "repo": "pydata/xarray",
+    "valid": false,
+    "error": "RuntimeError: Failed to pull SWE-bench image 'swebench/sweb.eval.x86_64.pydata_1776_xarray-4248:latest': failed to register layer: write /opt/miniconda3/envs/testbed/lib/libgrpc.so.42.0.0: no space left on device\nMake sure Docker Hub is reachable and the image exists."
+  },
+  {
+    "task_id": "pylint-dev__pylint-5859",
+    "repo": "pylint-dev/pylint",
+    "valid": true,
+    "crashed": true,
+    "error_types": [
+      "ModuleNotFoundError"
+    ],
+    "error_category": "environment",
+    "f2p_failing": 0,
+    "f2p_total": 1,
+    "p2p_passing": 0,
+    "n_stages": 1,
+    "baseline_seconds": 50,
+    "summary_line": "2 errors in 7.18s"
+  },
+  {
+    "task_id": "matplotlib__matplotlib-23314",
+    "repo": "matplotlib/matplotlib",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "OSError",
+      "ImageComparisonFailure"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 710,
+    "n_stages": 2,
+    "baseline_seconds": 489,
+    "summary_line": "2 failed, 862 passed, 63 skipped in 408.64s (0:06:48)"
+  },
+  {
+    "task_id": "pylint-dev__pylint-7993",
+    "repo": "pylint-dev/pylint",
+    "valid": true,
+    "crashed": true,
+    "error_types": [
+      "ModuleNotFoundError"
+    ],
+    "error_category": "environment",
+    "f2p_failing": 0,
+    "f2p_total": 1,
+    "p2p_passing": 0,
+    "n_stages": 1,
+    "baseline_seconds": 49,
+    "summary_line": "3 errors in 7.53s"
+  },
+  {
+    "task_id": "pylint-dev__pylint-7080",
+    "repo": "pylint-dev/pylint",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError",
+      "TOMLKitError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 106,
+    "n_stages": 2,
+    "baseline_seconds": 120,
+    "summary_line": "3 failed, 121 passed, 1 xfailed in 70.95s (0:01:10)"
+  },
+  {
+    "task_id": "pytest-dev__pytest-5103",
+    "repo": "pytest-dev/pytest",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 64,
+    "n_stages": 2,
+    "baseline_seconds": 50,
+    "summary_line": "1 failed in 0.02 seconds"
+  },
+  {
+    "task_id": "matplotlib__matplotlib-24334",
+    "repo": "matplotlib/matplotlib",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AttributeError",
+      "OSError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 701,
+    "n_stages": 2,
+    "baseline_seconds": 504,
+    "summary_line": "2 failed, 769 passed, 64 skipped in 352.80s (0:05:52)"
+  },
+  {
+    "task_id": "pytest-dev__pytest-5221",
+    "repo": "pytest-dev/pytest",
+    "valid": true,
+    "crashed": true,
+    "error_types": [
+      "ModuleNotFoundError"
+    ],
+    "error_category": "environment",
+    "f2p_failing": 0,
+    "f2p_total": 2,
+    "p2p_passing": 0,
+    "n_stages": 3,
+    "baseline_seconds": 55,
+    "summary_line": "1 error in 16.55 seconds"
+  },
+  {
+    "task_id": "pytest-dev__pytest-8365",
+    "repo": "pytest-dev/pytest",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "FileNotFoundError"
+    ],
+    "error_category": "environment",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 32,
+    "n_stages": 2,
+    "baseline_seconds": 36,
+    "summary_line": "1 passed in 0.02s"
+  },
+  {
+    "task_id": "pytest-dev__pytest-9359",
+    "repo": "pytest-dev/pytest",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 54,
+    "n_stages": 2,
+    "baseline_seconds": 37,
+    "summary_line": "1 failed, 54 passed in 0.75s"
+  },
+  {
+    "task_id": "sphinx-doc__sphinx-10325",
+    "repo": "sphinx-doc/sphinx",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 5,
+    "n_stages": 2,
+    "baseline_seconds": 70,
+    "summary_line": "1 failed, 5 passed in 4.44s"
+  },
+  {
+    "task_id": "sphinx-doc__sphinx-8435",
+    "repo": "sphinx-doc/sphinx",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 16,
+    "n_stages": 2,
+    "baseline_seconds": 26,
+    "summary_line": "1 failed, 16 passed, 57 warnings in 5.59s"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-25570",
+    "repo": "scikit-learn/scikit-learn",
+    "valid": true,
+    "crashed": true,
+    "error_types": [],
+    "error_category": "logic",
+    "f2p_failing": 0,
+    "f2p_total": 3,
+    "p2p_passing": 0,
+    "n_stages": 4,
+    "baseline_seconds": 115,
+    "summary_line": ""
+  },
+  {
+    "task_id": "sympy__sympy-12171",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 8,
+    "n_stages": 2,
+    "baseline_seconds": 33,
+    "summary_line": "tests finished: 9 passed, 1 failed, in 0.21 seconds"
+  },
+  {
+    "task_id": "sphinx-doc__sphinx-8801",
+    "repo": "sphinx-doc/sphinx",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 8,
+    "n_stages": 2,
+    "baseline_seconds": 41,
+    "summary_line": "1 failed, 8 passed in 3.70s"
+  },
+  {
+    "task_id": "sympy__sympy-13915",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 62,
+    "n_stages": 2,
+    "baseline_seconds": 37,
+    "summary_line": "tests finished: 63 passed, 1 failed, 3 expected to fail, 15 exceptions,"
+  },
+  {
+    "task_id": "scikit-learn__scikit-learn-14087",
+    "repo": "scikit-learn/scikit-learn",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "TypeError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 3,
+    "f2p_total": 3,
+    "p2p_passing": 172,
+    "n_stages": 4,
+    "baseline_seconds": 202,
+    "summary_line": "3 failed, 172 passed, 445 warnings in 115.65s (0:01:55)"
+  },
+  {
+    "task_id": "sympy__sympy-14308",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError",
+      "AssertionError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 113,
+    "n_stages": 3,
+    "baseline_seconds": 49,
+    "summary_line": "tests finished: 115 passed, 2 failed, 1 expected to fail,"
+  },
+  {
+    "task_id": "sympy__sympy-14817",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError",
+      "SympifyError",
+      "SyntaxError"
+    ],
+    "error_category": "syntax",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 111,
+    "n_stages": 2,
+    "baseline_seconds": 47,
+    "summary_line": "tests finished: 112 passed, 1 expected to fail but passed, 4 exceptions,"
+  },
+  {
+    "task_id": "sympy__sympy-12454",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "RecursionError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 134,
+    "n_stages": 3,
+    "baseline_seconds": 125,
+    "summary_line": "tests finished: 135 passed, 3 skipped, 4 expected to fail, 10 exceptions,"
+  },
+  {
+    "task_id": "sympy__sympy-15308",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError",
+      "AssertionError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 120,
+    "n_stages": 2,
+    "baseline_seconds": 38,
+    "summary_line": "tests finished: 120 passed, 2 failed, 2 expected to fail, 2 exceptions,"
+  },
+  {
+    "task_id": "sympy__sympy-16792",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 54,
+    "n_stages": 2,
+    "baseline_seconds": 30,
+    "summary_line": "tests finished: 55 passed, 1 failed, in 7.73 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-17022",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 8,
+    "n_stages": 2,
+    "baseline_seconds": 26,
+    "summary_line": "tests finished: 9 passed, 1 failed, 17 skipped, in 0.23 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-15346",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 22,
+    "n_stages": 2,
+    "baseline_seconds": 188,
+    "summary_line": "tests finished: 23 passed, 1 failed, 1 expected to fail, in 162.74 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-19007",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 3,
+    "f2p_total": 3,
+    "p2p_passing": 26,
+    "n_stages": 4,
+    "baseline_seconds": 28,
+    "summary_line": "tests finished: 28 passed, 3 failed, 1 expected to fail, in 3.26 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-18189",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 41,
+    "n_stages": 2,
+    "baseline_seconds": 176,
+    "summary_line": "tests finished: 42 passed, 1 failed, 1 skipped, 2 expected to fail,"
+  },
+  {
+    "task_id": "sympy__sympy-20590",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 21,
+    "n_stages": 2,
+    "baseline_seconds": 27,
+    "summary_line": "tests finished: 22 passed, 1 failed, in 0.80 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-21055",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 13,
+    "n_stages": 2,
+    "baseline_seconds": 45,
+    "summary_line": "tests finished: 14 passed, 1 failed, in 18.77 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-20322",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 89,
+    "n_stages": 2,
+    "baseline_seconds": 99,
+    "summary_line": "tests finished: 90 passed, 1 failed, 2 expected to fail, in 73.11 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-21614",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "AssertionError"
+    ],
+    "error_category": "logic",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 6,
+    "n_stages": 2,
+    "baseline_seconds": 45,
+    "summary_line": "tests finished: 7 passed, 1 failed, in 0.50 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-22714",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 11,
+    "n_stages": 2,
+    "baseline_seconds": 63,
+    "summary_line": "tests finished: 12 passed, 1 exceptions, in 28.34 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-24213",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "ValueError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 1,
+    "f2p_total": 1,
+    "p2p_passing": 31,
+    "n_stages": 2,
+    "baseline_seconds": 37,
+    "summary_line": "tests finished: 32 passed, 1 expected to fail, 1 exceptions, in 8.18 seconds"
+  },
+  {
+    "task_id": "sympy__sympy-17139",
+    "repo": "sympy/sympy",
+    "valid": true,
+    "crashed": false,
+    "error_types": [
+      "TypeError"
+    ],
+    "error_category": "runtime",
+    "f2p_failing": 2,
+    "f2p_total": 2,
+    "p2p_passing": 67,
+    "n_stages": 3,
+    "baseline_seconds": 614,
+    "summary_line": "tests finished: 69 passed, 2 expected to fail, 2 exceptions, in 588.66 seconds"
+  }
+]

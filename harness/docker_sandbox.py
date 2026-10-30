@@ -39,6 +39,14 @@ def _instance_to_image(instance_id: str) -> str:
     return f"swebench/sweb.eval.x86_64.{image_id}:latest"
 
 
+def _clip(text: str, max_chars: int) -> str:
+    if len(text) <= max_chars:
+        return text
+    head = max_chars // 4
+    tail = max_chars - head
+    return f"{text[:head]}\n…[{len(text) - max_chars} chars truncated]…\n{text[-tail:]}"
+
+
 def _get_docker_client() -> Any:
     """Return a Docker SDK client, raising a clear error if Docker is not running."""
     try:
@@ -136,11 +144,14 @@ class DockerSandbox:
             mem_limit="4g",
         )
 
-        # Checkout the base commit
+        # SWE-bench images sit on a "SWE-bench" commit directly on top of base_commit;
+        # only check out if the image is somewhere else.
         base_commit: str = self._task["base_commit"]
-        print(f"[DockerSandbox] Checking out {base_commit} …")
-        out = self.run(f"git checkout {base_commit} 2>&1")
-        print(f"[DockerSandbox] git checkout output: {out[:200]}")
+        heads = self.run("git rev-parse HEAD HEAD~1 2>/dev/null")
+        if base_commit not in heads:
+            print(f"[DockerSandbox] Checking out {base_commit} …")
+            out = self.run(f"git checkout -q {base_commit} 2>&1")
+            print(f"[DockerSandbox] git checkout output: {out[:200]}")
         return self
 
     def __exit__(self, *args: Any) -> None:
@@ -160,20 +171,25 @@ class DockerSandbox:
     # Public API
     # ------------------------------------------------------------------
 
-    def run(self, command: str) -> str:
+    # Every command runs inside the image's pre-built conda env (correct Python
+    # version, repo installed in develop mode, test deps present).
+    ENV_PREFIX: str = "source /opt/miniconda3/bin/activate testbed >/dev/null 2>&1; "
+
+    def run(self, command: str, timeout: int | None = None, max_chars: int = 8000) -> str:
         """Run a bash command in the container and return stdout + stderr.
 
-        The command is executed inside ``/bin/bash -c``. Output is truncated
-        to 4000 characters.
-
-        Args:
-            command: Bash command string to execute.
-
-        Returns:
-            Combined stdout/stderr as a string (up to 4000 chars).
+        Output longer than ``max_chars`` keeps the head and a larger tail,
+        since test summaries and exception lines come last.
         """
+        return self.run_with_code(command, timeout, max_chars)[1]
+
+    def run_with_code(
+        self, command: str, timeout: int | None = None, max_chars: int = 8000
+    ) -> tuple[int | None, str]:
+        """Like ``run`` but also returns the exit code (None on timeout/sandbox error)."""
         if self._container is None:
             raise RuntimeError("Sandbox is not active (use as context manager).")
+        timeout = timeout or self.timeout
 
         result_holder: list = []
         error_holder: list = []
@@ -181,7 +197,8 @@ class DockerSandbox:
         def _exec() -> None:
             try:
                 exit_code, output = self._container.exec_run(
-                    ["/bin/bash", "-c", command],
+                    ["timeout", "-s", "KILL", str(timeout),
+                     "/bin/bash", "-c", self.ENV_PREFIX + command],
                     workdir=self.WORKDIR,
                     demux=False,
                 )
@@ -192,18 +209,46 @@ class DockerSandbox:
 
         t = threading.Thread(target=_exec, daemon=True)
         t.start()
-        t.join(timeout=self.timeout)
+        t.join(timeout=timeout + 30)
 
         if error_holder:
-            return f"[SANDBOX ERROR]: {error_holder[0]}"
+            return None, f"[SANDBOX ERROR]: {error_holder[0]}"
         if not result_holder:
-            return f"[TIMEOUT: command exceeded {self.timeout}s]"
+            return None, f"[TIMEOUT: command exceeded {timeout}s]"
 
-        _exit_code, text = result_holder[0]
-        # Truncate to 4000 chars
-        if len(text) > 4000:
-            text = text[:3970] + "\n…[truncated]"
-        return text
+        exit_code, text = result_holder[0]
+        if exit_code == 137:
+            return None, f"[TIMEOUT: command exceeded {timeout}s]\n{_clip(text, max_chars)}"
+        return exit_code, _clip(text, max_chars)
+
+    def apply_patch(self, patch: str) -> str:
+        """Apply a unified diff to /testbed; returns git apply output."""
+        self.write_file("/tmp/_harness.patch", patch)
+        return self.run(
+            "git apply -v /tmp/_harness.patch 2>&1 || patch -p1 --forward < /tmp/_harness.patch 2>&1"
+        )
+
+    def commit_all(self, message: str) -> str:
+        """Commit the working tree so later ``git diff`` shows only agent changes."""
+        return self.run(
+            "git add -A && git -c user.email=harness@local -c user.name=harness "
+            f"commit -q --no-verify -m {message!r} 2>&1"
+        )
+
+    def code_fingerprint(self) -> str:
+        """Cheap hash of tracked changes + untracked .py files, used to detect edits."""
+        return self.run(
+            "{ git diff HEAD; git ls-files --others --exclude-standard -- '*.py' "
+            "| xargs -r cat; } 2>/dev/null | md5sum | cut -c1-12",
+            timeout=30,
+        ).strip()
+
+    def changed_files(self) -> list[str]:
+        out = self.run(
+            "git diff HEAD --name-only; git ls-files --others --exclude-standard -- '*.py'",
+            timeout=30,
+        )
+        return [l.strip() for l in out.splitlines() if l.strip()]
 
     def write_file(self, path: str, content: str) -> None:
         """Write content to a file path inside the container.
