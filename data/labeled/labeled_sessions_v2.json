@@ -1,5 +1,693 @@
 [
   {
+    "task_id": "django__django-10924",
+    "resolved": true,
+    "total_tokens": 5512,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 949,
+        "token_span": 949,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_callable_path (model_fields.test_filepathfield.FilePathFieldTests)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 7,
+        "token_start": 949,
+        "token_end": 1642,
+        "token_span": 693,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_callable_path (model_fields.test_filepathfield.FilePathFieldTests)"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 8,
+        "end_step": 17,
+        "token_start": 1642,
+        "token_end": 2853,
+        "token_span": 1211,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_callable_path (model_fields.test_filepathfield.FilePathFieldTests)"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 18,
+        "end_step": 31,
+        "token_start": 2853,
+        "token_end": 5393,
+        "token_span": 2540,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 32,
+        "end_step": 32,
+        "token_start": 5393,
+        "token_end": 5490,
+        "token_span": 97,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 33,
+        "end_step": 33,
+        "token_start": 5490,
+        "token_end": 5512,
+        "token_span": 22,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.5176
+  },
+  {
+    "task_id": "django__django-12497",
+    "resolved": true,
+    "total_tokens": 6999,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1018,
+        "token_span": 1018,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_ambiguous_relationship_model_from (invalid_models_tests.test_relative_fields.RelativeFieldTests)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 33,
+        "token_start": 1018,
+        "token_end": 6756,
+        "token_span": 5738,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 34,
+        "end_step": 34,
+        "token_start": 6756,
+        "token_end": 6879,
+        "token_span": 123,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 35,
+        "end_step": 35,
+        "token_start": 6879,
+        "token_end": 6977,
+        "token_span": 98,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 36,
+        "end_step": 36,
+        "token_start": 6977,
+        "token_end": 6999,
+        "token_span": 22,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.1454
+  },
+  {
+    "task_id": "django__django-12747",
+    "resolved": true,
+    "total_tokens": 4495,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 983,
+        "token_span": 983,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/4: make these tests pass: test_fast_delete_empty_no_update_can_self_select (delete.tests.FastDeleteTests)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 15,
+        "token_start": 983,
+        "token_end": 2537,
+        "token_span": 1554,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 16,
+        "end_step": 16,
+        "token_start": 2537,
+        "token_end": 2783,
+        "token_span": 246,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[harness] Stage 1/4 passed. Moving to stage 2. I ran its tests for you:"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 17,
+        "end_step": 28,
+        "token_start": 2783,
+        "token_end": 4241,
+        "token_span": 1458,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 29,
+        "end_step": 29,
+        "token_start": 4241,
+        "token_end": 4367,
+        "token_span": 126,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 30,
+        "end_step": 30,
+        "token_start": 4367,
+        "token_end": 4467,
+        "token_span": 100,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 31,
+        "end_step": 31,
+        "token_start": 4467,
+        "token_end": 4495,
+        "token_span": 28,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.2734
+  },
+  {
+    "task_id": "django__django-13230",
+    "resolved": true,
+    "total_tokens": 7218,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 822,
+        "token_span": 822,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_rss2_feed (syndication_tests.tests.SyndicationFeedTest)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 33,
+        "token_start": 822,
+        "token_end": 5797,
+        "token_span": 4975,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_rss2_feed (syndication_tests.tests.SyndicationFeedTest)"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 34,
+        "end_step": 39,
+        "token_start": 5797,
+        "token_end": 7100,
+        "token_span": 1303,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 40,
+        "end_step": 40,
+        "token_start": 7100,
+        "token_end": 7196,
+        "token_span": 96,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 41,
+        "end_step": 41,
+        "token_start": 7196,
+        "token_end": 7218,
+        "token_span": 22,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.8031
+  },
+  {
+    "task_id": "django__django-15789",
+    "resolved": true,
+    "total_tokens": 1908,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 792,
+        "token_span": 792,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_json_script_custom_encoder (utils_tests.test_html.TestUtilsHtml)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 9,
+        "token_start": 792,
+        "token_end": 1790,
+        "token_span": 998,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 10,
+        "end_step": 10,
+        "token_start": 1790,
+        "token_end": 1886,
+        "token_span": 96,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 11,
+        "end_step": 11,
+        "token_start": 1886,
+        "token_end": 1908,
+        "token_span": 22,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.4151
+  },
+  {
+    "task_id": "django__django-16041",
+    "resolved": true,
+    "total_tokens": 3511,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1079,
+        "token_span": 1079,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_empty_permitted_ignored_empty_form (forms_tests.tests.test_formsets.FormsFormsetTestCase)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 15,
+        "token_start": 1079,
+        "token_end": 3253,
+        "token_span": 2174,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 16,
+        "end_step": 16,
+        "token_start": 3253,
+        "token_end": 3391,
+        "token_span": 138,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 17,
+        "end_step": 17,
+        "token_start": 3391,
+        "token_end": 3489,
+        "token_span": 98,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 18,
+        "end_step": 18,
+        "token_start": 3489,
+        "token_end": 3511,
+        "token_span": 22,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.3073
+  },
+  {
+    "task_id": "matplotlib__matplotlib-25498",
+    "resolved": true,
+    "total_tokens": 7293,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1752,
+        "token_span": 1752,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 13,
+        "token_start": 1752,
+        "token_end": 4261,
+        "token_span": 2509,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 14,
+        "end_step": 17,
+        "token_start": 4261,
+        "token_end": 5263,
+        "token_span": 1002,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 18,
+        "end_step": 21,
+        "token_start": 5263,
+        "token_end": 6353,
+        "token_span": 1090,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 22,
+        "end_step": 25,
+        "token_start": 6353,
+        "token_end": 7158,
+        "token_span": 805,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 26,
+        "end_step": 26,
+        "token_start": 7158,
+        "token_end": 7269,
+        "token_span": 111,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 27,
+        "end_step": 27,
+        "token_start": 7269,
+        "token_end": 7293,
+        "token_span": 24,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.8711
+  },
+  {
+    "task_id": "sympy__sympy-24213",
+    "resolved": true,
+    "total_tokens": 1891,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 978,
+        "token_span": 978,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_issue_24211"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 7,
+        "token_start": 978,
+        "token_end": 1757,
+        "token_span": 779,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 8,
+        "end_step": 8,
+        "token_start": 1757,
+        "token_end": 1861,
+        "token_span": 104,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 9,
+        "end_step": 9,
+        "token_start": 1861,
+        "token_end": 1891,
+        "token_span": 30,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      }
+    ],
+    "failed_token_fraction": 0.5172
+  },
+  {
+    "task_id": "django__django-11283",
+    "resolved": false,
+    "total_tokens": 30751,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1444,
+        "token_span": 1444,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 7,
+        "token_start": 1444,
+        "token_end": 3059,
+        "token_span": 1615,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 8,
+        "end_step": 11,
+        "token_start": 3059,
+        "token_end": 4223,
+        "token_span": 1164,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 12,
+        "end_step": 15,
+        "token_start": 4223,
+        "token_end": 5552,
+        "token_span": 1329,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 16,
+        "end_step": 19,
+        "token_start": 5552,
+        "token_end": 6516,
+        "token_span": 964,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 20,
+        "end_step": 39,
+        "token_start": 6516,
+        "token_end": 10740,
+        "token_span": 4224,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 40,
+        "end_step": 43,
+        "token_start": 10740,
+        "token_end": 11343,
+        "token_span": 603,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 7,
+        "start_step": 44,
+        "end_step": 55,
+        "token_start": 11343,
+        "token_end": 12565,
+        "token_span": 1222,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 8,
+        "start_step": 56,
+        "end_step": 61,
+        "token_start": 12565,
+        "token_end": 13854,
+        "token_span": 1289,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 9,
+        "start_step": 62,
+        "end_step": 65,
+        "token_start": 13854,
+        "token_end": 15554,
+        "token_span": 1700,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 10,
+        "start_step": 66,
+        "end_step": 69,
+        "token_start": 15554,
+        "token_end": 16973,
+        "token_span": 1419,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 11,
+        "start_step": 70,
+        "end_step": 73,
+        "token_start": 16973,
+        "token_end": 18705,
+        "token_span": 1732,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests)"
+      },
+      {
+        "attempt_id": 12,
+        "start_step": 74,
+        "end_step": 90,
+        "token_start": 18705,
+        "token_end": 30751,
+        "token_span": 12046,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
     "task_id": "django__django-13265",
     "resolved": false,
     "total_tokens": 32228,
@@ -85,67 +773,355 @@
     "failed_token_fraction": 1.0
   },
   {
-    "task_id": "django__django-16041",
-    "resolved": true,
-    "total_tokens": 3511,
+    "task_id": "django__django-13315",
+    "resolved": false,
+    "total_tokens": 23278,
     "attempts": [
       {
         "attempt_id": 0,
         "start_step": 0,
         "end_step": 1,
         "token_start": 0,
-        "token_end": 1079,
-        "token_span": 1079,
+        "token_end": 812,
+        "token_span": 812,
         "outcome": "fail",
-        "error_type": "runtime",
-        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_empty_permitted_ignored_empty_form (forms_tests.tests.test_formsets.FormsFormsetTestCase)"
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_limit_choices_to_no_duplicates (model_forms.tests.LimitChoicesToTests)"
       },
       {
         "attempt_id": 1,
         "start_step": 2,
-        "end_step": 15,
-        "token_start": 1079,
-        "token_end": 3253,
-        "token_span": 2174,
-        "outcome": "pass",
-        "error_type": null,
-        "error_snippet": null
+        "end_step": 53,
+        "token_start": 812,
+        "token_end": 11882,
+        "token_span": 11070,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_limit_choices_to_no_duplicates (model_forms.tests.LimitChoicesToTests)"
       },
       {
         "attempt_id": 2,
-        "start_step": 16,
-        "end_step": 16,
-        "token_start": 3253,
-        "token_end": 3391,
-        "token_span": 138,
-        "outcome": "pass",
-        "error_type": null,
-        "error_snippet": null
+        "start_step": 54,
+        "end_step": 79,
+        "token_start": 11882,
+        "token_end": 19054,
+        "token_span": 7172,
+        "outcome": "fail",
+        "error_type": "environment",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_limit_choices_to_no_duplicates (model_forms.tests.LimitChoicesToTests)"
       },
       {
         "attempt_id": 3,
-        "start_step": 17,
-        "end_step": 17,
-        "token_start": 3391,
-        "token_end": 3489,
-        "token_span": 98,
+        "start_step": 80,
+        "end_step": 95,
+        "token_start": 19054,
+        "token_end": 22454,
+        "token_span": 3400,
+        "outcome": "unknown",
+        "error_type": null,
+        "error_snippet": "450:             'environment variable or \"test_sqlite\" will be used.',"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 96,
+        "end_step": 96,
+        "token_start": 22454,
+        "token_end": 23278,
+        "token_span": 824,
+        "outcome": "fail",
+        "error_type": "environment",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 0.8539
+  },
+  {
+    "task_id": "django__django-13447",
+    "resolved": false,
+    "total_tokens": 12575,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 766,
+        "token_span": 766,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_available_apps (admin_views.test_adminsite.SiteEachContextTest)"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 80,
+        "token_start": 766,
+        "token_end": 12575,
+        "token_span": 11809,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "django__django-14608",
+    "resolved": false,
+    "total_tokens": 27449,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1288,
+        "token_span": 1288,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/5: make these tests pass: If validate_max is set and max_num is less than TOTAL_FORMS in the"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 31,
+        "token_start": 1288,
+        "token_end": 7597,
+        "token_span": 6309,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/5: make these tests pass: If validate_max is set and max_num is less than TOTAL_FORMS in the"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 32,
+        "end_step": 39,
+        "token_start": 7597,
+        "token_end": 9914,
+        "token_span": 2317,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/5: make these tests pass: If validate_max is set and max_num is less than TOTAL_FORMS in the"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 40,
+        "end_step": 53,
+        "token_start": 9914,
+        "token_end": 15067,
+        "token_span": 5153,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/5: make these tests pass: If validate_max is set and max_num is less than TOTAL_FORMS in the"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 54,
+        "end_step": 69,
+        "token_start": 15067,
+        "token_end": 22084,
+        "token_span": 7017,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/5: make these tests pass: If validate_max is set and max_num is less than TOTAL_FORMS in the"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 70,
+        "end_step": 76,
+        "token_start": 22084,
+        "token_end": 27449,
+        "token_span": 5365,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "pytest-dev__pytest-8365",
+    "resolved": false,
+    "total_tokens": 22979,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1209,
+        "token_span": 1209,
+        "outcome": "fail",
+        "error_type": "environment",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: testing/test_tmpdir.py::test_tmp_path_factory_handles_invalid_dir_characters"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 3,
+        "token_start": 1209,
+        "token_end": 1341,
+        "token_span": 132,
+        "outcome": "unknown",
+        "error_type": null,
+        "error_snippet": "157:        return getpass.getuser()"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 4,
+        "end_step": 7,
+        "token_start": 1341,
+        "token_end": 1821,
+        "token_span": 480,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: testing/test_tmpdir.py::test_tmp_path_factory_handles_invalid_dir_characters"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 8,
+        "end_step": 9,
+        "token_start": 1821,
+        "token_end": 2047,
+        "token_span": 226,
+        "outcome": "unknown",
+        "error_type": "logic",
+        "error_snippet": "459:    assert \"pytest-of-unknown\" in str(p)"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 10,
+        "end_step": 15,
+        "token_start": 2047,
+        "token_end": 2889,
+        "token_span": 842,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: testing/test_tmpdir.py::test_tmp_path_factory_handles_invalid_dir_characters"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 16,
+        "end_step": 19,
+        "token_start": 2889,
+        "token_end": 3312,
+        "token_span": 423,
         "outcome": "pass",
         "error_type": null,
         "error_snippet": null
       },
       {
-        "attempt_id": 4,
-        "start_step": 18,
-        "end_step": 18,
-        "token_start": 3489,
-        "token_end": 3511,
-        "token_span": 22,
-        "outcome": "pass",
-        "error_type": null,
-        "error_snippet": null
+        "attempt_id": 6,
+        "start_step": 20,
+        "end_step": 20,
+        "token_start": 3312,
+        "token_end": 3521,
+        "token_span": 209,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[harness] Stage 1/2 passed. Moving to stage 2. I ran its tests for you:"
+      },
+      {
+        "attempt_id": 7,
+        "start_step": 21,
+        "end_step": 24,
+        "token_start": 3521,
+        "token_end": 4075,
+        "token_span": 554,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 2/2 (regression): all target tests plus 32 previously-passing tests in the same test files must pass"
+      },
+      {
+        "attempt_id": 8,
+        "start_step": 25,
+        "end_step": 28,
+        "token_start": 4075,
+        "token_end": 4791,
+        "token_span": 716,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 2/2 (regression): all target tests plus 32 previously-passing tests in the same test files must pass"
+      },
+      {
+        "attempt_id": 9,
+        "start_step": 29,
+        "end_step": 32,
+        "token_start": 4791,
+        "token_end": 5570,
+        "token_span": 779,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 2/2 (regression): all target tests plus 32 previously-passing tests in the same test files must pass"
+      },
+      {
+        "attempt_id": 10,
+        "start_step": 33,
+        "end_step": 36,
+        "token_start": 5570,
+        "token_end": 6295,
+        "token_span": 725,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 2/2 (regression): all target tests plus 32 previously-passing tests in the same test files must pass"
+      },
+      {
+        "attempt_id": 11,
+        "start_step": 37,
+        "end_step": 62,
+        "token_start": 6295,
+        "token_end": 15472,
+        "token_span": 9177,
+        "outcome": "unknown",
+        "error_type": "runtime",
+        "error_snippet": "# use a sub-directory in the temproot to speed-up"
+      },
+      {
+        "attempt_id": 12,
+        "start_step": 63,
+        "end_step": 64,
+        "token_start": 15472,
+        "token_end": 17269,
+        "token_span": 1797,
+        "outcome": "unknown",
+        "error_type": "runtime",
+        "error_snippet": "[BLOCKED] You just made this exact call and nothing has changed since. Its output was:"
+      },
+      {
+        "attempt_id": 13,
+        "start_step": 65,
+        "end_step": 68,
+        "token_start": 17269,
+        "token_end": 20922,
+        "token_span": 3653,
+        "outcome": "unknown",
+        "error_type": "runtime",
+        "error_snippet": "# use a sub-directory in the temproot to speed-up"
+      },
+      {
+        "attempt_id": 14,
+        "start_step": 69,
+        "end_step": 70,
+        "token_start": 20922,
+        "token_end": 22719,
+        "token_span": 1797,
+        "outcome": "unknown",
+        "error_type": "runtime",
+        "error_snippet": "[BLOCKED] You just made this exact call and nothing has changed since. Its output was:"
+      },
+      {
+        "attempt_id": 15,
+        "start_step": 71,
+        "end_step": 71,
+        "token_start": 22719,
+        "token_end": 22979,
+        "token_span": 260,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[final_eval]"
       }
     ],
-    "failed_token_fraction": 0.3073
+    "failed_token_fraction": 0.2513
   },
   {
     "task_id": "scikit-learn__scikit-learn-14087",
@@ -310,6 +1286,187 @@
     "failed_token_fraction": 0.9563
   },
   {
+    "task_id": "sympy__sympy-12454",
+    "resolved": false,
+    "total_tokens": 22170,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1284,
+        "token_span": 1284,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_is_upper"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 15,
+        "token_start": 1284,
+        "token_end": 2639,
+        "token_span": 1355,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 16,
+        "end_step": 16,
+        "token_start": 2639,
+        "token_end": 3908,
+        "token_span": 1269,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[harness] Stage 1/3 passed. Moving to stage 2. I ran its tests for you:"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 17,
+        "end_step": 32,
+        "token_start": 3908,
+        "token_end": 7711,
+        "token_span": 3803,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 2/3: make these tests pass: test_hessenberg"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 33,
+        "end_step": 70,
+        "token_start": 7711,
+        "token_end": 18591,
+        "token_span": 10880,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 2/3: make these tests pass: test_hessenberg"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 71,
+        "end_step": 81,
+        "token_start": 18591,
+        "token_end": 22170,
+        "token_span": 3579,
+        "outcome": "fail",
+        "error_type": "syntax",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 0.9389
+  },
+  {
+    "task_id": "sympy__sympy-14308",
+    "resolved": false,
+    "total_tokens": 20548,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 822,
+        "token_span": 822,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 9,
+        "token_start": 822,
+        "token_end": 2094,
+        "token_span": 1272,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 10,
+        "end_step": 19,
+        "token_start": 2094,
+        "token_end": 3549,
+        "token_span": 1455,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 20,
+        "end_step": 23,
+        "token_start": 3549,
+        "token_end": 4200,
+        "token_span": 651,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 24,
+        "end_step": 33,
+        "token_start": 4200,
+        "token_end": 6741,
+        "token_span": 2541,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 34,
+        "end_step": 37,
+        "token_start": 6741,
+        "token_end": 7478,
+        "token_span": 737,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 38,
+        "end_step": 41,
+        "token_start": 7478,
+        "token_end": 8279,
+        "token_span": 801,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 7,
+        "start_step": 42,
+        "end_step": 45,
+        "token_start": 8279,
+        "token_end": 9055,
+        "token_span": 776,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/3: make these tests pass: test_issue_12675"
+      },
+      {
+        "attempt_id": 8,
+        "start_step": 46,
+        "end_step": 81,
+        "token_start": 9055,
+        "token_end": 20548,
+        "token_span": 11493,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
     "task_id": "sympy__sympy-14817",
     "resolved": false,
     "total_tokens": 28658,
@@ -459,5 +1616,334 @@
       }
     ],
     "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "sympy__sympy-15308",
+    "resolved": false,
+    "total_tokens": 13853,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 722,
+        "token_span": 722,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 23,
+        "token_start": 722,
+        "token_end": 4048,
+        "token_span": 3326,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 24,
+        "end_step": 27,
+        "token_start": 4048,
+        "token_end": 4531,
+        "token_span": 483,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 28,
+        "end_step": 31,
+        "token_start": 4531,
+        "token_end": 5023,
+        "token_span": 492,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 32,
+        "end_step": 35,
+        "token_start": 5023,
+        "token_end": 5519,
+        "token_span": 496,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 36,
+        "end_step": 39,
+        "token_start": 5519,
+        "token_end": 6029,
+        "token_span": 510,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 40,
+        "end_step": 43,
+        "token_start": 6029,
+        "token_end": 6556,
+        "token_span": 527,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 7,
+        "start_step": 44,
+        "end_step": 47,
+        "token_start": 6556,
+        "token_end": 7103,
+        "token_span": 547,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 8,
+        "start_step": 48,
+        "end_step": 55,
+        "token_start": 7103,
+        "token_end": 8484,
+        "token_span": 1381,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 9,
+        "start_step": 56,
+        "end_step": 67,
+        "token_start": 8484,
+        "token_end": 10458,
+        "token_span": 1974,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 10,
+        "start_step": 68,
+        "end_step": 71,
+        "token_start": 10458,
+        "token_end": 11125,
+        "token_span": 667,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 11,
+        "start_step": 72,
+        "end_step": 75,
+        "token_start": 11125,
+        "token_end": 11707,
+        "token_span": 582,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_trace"
+      },
+      {
+        "attempt_id": 12,
+        "start_step": 76,
+        "end_step": 84,
+        "token_start": 11707,
+        "token_end": 13853,
+        "token_span": 2146,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "sympy__sympy-19007",
+    "resolved": false,
+    "total_tokens": 24755,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1014,
+        "token_span": 1014,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/4: make these tests pass: test_block_index_symbolic"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 23,
+        "token_start": 1014,
+        "token_end": 5682,
+        "token_span": 4668,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/4: make these tests pass: test_block_index_symbolic"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 24,
+        "end_step": 73,
+        "token_start": 5682,
+        "token_end": 24755,
+        "token_span": 19073,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "sympy__sympy-20442",
+    "resolved": false,
+    "total_tokens": 18633,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 852,
+        "token_span": 852,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 15,
+        "token_start": 852,
+        "token_end": 2628,
+        "token_span": 1776,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 16,
+        "end_step": 23,
+        "token_start": 2628,
+        "token_end": 3833,
+        "token_span": 1205,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 3,
+        "start_step": 24,
+        "end_step": 29,
+        "token_start": 3833,
+        "token_end": 5920,
+        "token_span": 2087,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 4,
+        "start_step": 30,
+        "end_step": 53,
+        "token_start": 5920,
+        "token_end": 9616,
+        "token_span": 3696,
+        "outcome": "fail",
+        "error_type": "runtime",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 5,
+        "start_step": 54,
+        "end_step": 57,
+        "token_start": 9616,
+        "token_end": 10028,
+        "token_span": 412,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 6,
+        "start_step": 58,
+        "end_step": 63,
+        "token_start": 10028,
+        "token_end": 10942,
+        "token_span": 914,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/2: make these tests pass: test_convert_to"
+      },
+      {
+        "attempt_id": 7,
+        "start_step": 64,
+        "end_step": 86,
+        "token_start": 10942,
+        "token_end": 18633,
+        "token_span": 7691,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 1.0
+  },
+  {
+    "task_id": "pylint-dev__pylint-5859",
+    "resolved": false,
+    "total_tokens": 3340,
+    "attempts": [
+      {
+        "attempt_id": 0,
+        "start_step": 0,
+        "end_step": 1,
+        "token_start": 0,
+        "token_end": 1212,
+        "token_span": 1212,
+        "outcome": "fail",
+        "error_type": "logic",
+        "error_snippet": "[run_tests] Stage 1/1: make these tests pass: tests/checkers/unittest_misc.py::TestFixme::test_non_alphanumeric_codetag"
+      },
+      {
+        "attempt_id": 1,
+        "start_step": 2,
+        "end_step": 15,
+        "token_start": 1212,
+        "token_end": 3007,
+        "token_span": 1795,
+        "outcome": "pass",
+        "error_type": null,
+        "error_snippet": null
+      },
+      {
+        "attempt_id": 2,
+        "start_step": 16,
+        "end_step": 16,
+        "token_start": 3007,
+        "token_end": 3340,
+        "token_span": 333,
+        "outcome": "fail",
+        "error_type": "environment",
+        "error_snippet": "[final_eval]"
+      }
+    ],
+    "failed_token_fraction": 0.4626
   }
 ]
